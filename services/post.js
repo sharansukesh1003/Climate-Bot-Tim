@@ -14,7 +14,7 @@ module.exports = {
         await downloadImage(image)
         await resizeImage()
         return {
-            postCaption: news.articles[0].description + `\n ${news.articles[0].url}`,
+            postCaption: news.articles[0].description +'\n Read the full article at' + `\n ${news.articles[0].url}`,
             postImage: 'public/resize.jpeg'
         }
     }
