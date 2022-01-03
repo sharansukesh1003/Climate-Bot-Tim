@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
+  "engines": { "node": "16.13.1" },
   "author": "Sharan Sukesh",
   "license": "ISC",
   "dependencies": {
