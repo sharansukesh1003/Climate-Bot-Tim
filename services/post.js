@@ -15,7 +15,7 @@ module.exports = {
         await resizeImage()
         return {
             postCaption: news.articles[0].description + `\n ${news.articles[0].url}`,
-            postImage: 'post_image/resize.jpeg'
+            postImage: 'public/resize.jpeg'
         }
     }
 }
@@ -23,7 +23,7 @@ module.exports = {
 async function downloadImage(image) {
     const options = {
         url: image,
-        dest: 'post_image/post.jpg'
+        dest: 'public/post.jpg'
     }
     await download.image(options)
         .then(() => {
@@ -36,5 +36,5 @@ async function downloadImage(image) {
 }
 
 async function resizeImage() {
-    sharp('post_image/post.jpg').resize(600, 600).toFile('post_image/resize.jpeg')
+    sharp('public/post.jpg').resize(600, 600).toFile('public/resize.jpeg')
 }

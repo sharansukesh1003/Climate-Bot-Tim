@@ -15,8 +15,8 @@ module.exports = {
                         mediaId: media.id,
                         text: "#Greenpeace #climatejustice #climateaction #ClimateChange #NextGeneration #rebelforlife #ClimateEmergency #ClimateJustice #ClimateCrisis #FossilFree #bethechange #ActNow #ForTheEarth #gretathunberg #KeepItInTheGround #SaveOurPlanet #NoPlanetB #SaveThePlanet #Sustainability #fighteverycrisis #ClimateStrike #SchoolStrike4Climate #StudentActivism #ClimateAction #Youth #SchoolStrikeForClimate #FridaysForFuture #fightforafuture #extinctionrebellion"
                     })
-                    let postPath = 'post_image/post.jpg'
-                    let postResizedPath = 'post_image/resize.jpeg'
+                    let postPath = 'public/post.jpg'
+                    let postResizedPath = 'public/resize.jpeg'
                     fs.unlinkSync(postPath)
                     fs.unlinkSync(postResizedPath)
                     console.log('successfully posted')
