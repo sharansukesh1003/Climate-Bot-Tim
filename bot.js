@@ -11,7 +11,7 @@ const username = process.env.IG_USERNAME
 
 const client = new Instagram({ username, password, cookieStore }, { language: 'en:us' })
 
-var job = new CronJob('0 */1 * * * *', async () => {
+var job = new CronJob('0 0 */24 * * *', async () => {
     console.log("started")
     const postData = await climateNews()
     post(client, postData)
